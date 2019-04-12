@@ -2,7 +2,8 @@
   "entrypoint": "index.html",
   "shell": "src/start-polymer3.js",
   "fragments": [
-    "src/lazy-element.js"
+    "src/lazy-element.js",
+    "src/landing-page.js"
   ],
   "sources": [
    "src/start-polymer3.js",
@@ -14,7 +15,7 @@
     "node_modules/@webcomponents/webcomponentsjs/**"
   ],
   "builds": [
-    { 
+    {
       "preset": "es6-unbundled"
     }
   ],
