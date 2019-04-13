@@ -41,11 +41,68 @@ Polymer({
         background-color: rgba(255, 255, 255, 0.95);
       }
       
-       .input {
-        @apply --layout-horizontal;
-        @apply --layout-end-justified;
-        color: rgba(255, 255, 255);
-      }
+
+
+
+
+
+.custom-parent {
+      /*font-size: 12px;*/
+    }
+    paper-input.custom:hover {
+      /*border: 1px solid #29B6F6;*/
+    }
+    paper-input.custom {
+      /*margin-bottom: 14px;*/
+      --primary-text-color: #01579B;
+      --paper-input-container-color: pink;
+      --paper-input-container-focus-color: pink;
+      --paper-input-container-invalid-color: pink;
+      /*border: 1px solid #fff;*/
+      border-radius: 5px;
+      width: 385px;
+      text-align: center;
+      /*padding: 8px 15px;*/
+      margin: 0 auto;
+
+      /* Reset some defaults */
+      /*--paper-input-container: { padding: 0;};*/
+      /*--paper-input-container-underline: { display: none; height: 0;};*/
+      /*--paper-input-container-underline-focus: { display: none; };*/
+      /*text-align: center;*/
+
+      /* New custom styles */
+      --paper-input-container-input: {
+        box-sizing: border-box;
+        font-size: inherit;
+        padding: 4px;
+      };
+      --paper-input-container-input-focus: {
+        color: white;
+      };
+      --paper-input-container-input-invalid: {
+        background: rgba(255, 0, 0, 0.3);
+      };
+      --paper-input-container-label: {
+        /*top: -8px;*/
+        /*left: 4px;*/
+        /*background: white;*/
+        /*padding: 2px;*/
+        /*font-weight: bold;*/
+        font-family: 'Merienda', cursive;
+        color: white;
+        text-align: center;
+        display: block;
+        position: inherit !important;
+        width: 100%;
+        /*background: red;*/
+      };
+      --paper-input-container-label-floating: {
+        width: auto;
+        /*background: aqua;*/
+      };
+    }
+    
       
       .tabs {
         height: 100%;
@@ -89,6 +146,7 @@ Polymer({
 
       header > p {
         font-size: 32px;
+        cursor: s-resize;
         /*background :linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);*/
         /*  -webkit-background-clip: text;*/
         /*  -webkit-text-fill-color: transparent;*/
@@ -146,11 +204,10 @@ Polymer({
       </app-header>
 
       <header>
-        <h2>Welcome To Our Landing Page</h2>
+        <h2>I am a title</h2>
         <p>Made with App Layout Elements</p>
 
-        <paper-input always-float-label label="Enter your email address" type="email" class="input"></paper-input>
-        <p>By entering your email</p>
+        <paper-input class="custom" always-float-label label="By entering your email entering you will be informed by the start" type="email"></paper-input>
       </header>
 
       <section id="about">
