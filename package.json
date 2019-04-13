@@ -6,14 +6,14 @@
   "author": "The Polymer Project Authors",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "@polymer/paper-checkbox": "latest",
-    "@polymer/paper-input": "^3.0.2",
-    "@polymer/paper-toolbar": "^3.0.1",
-    "@polymer/polymer": "latest",
-    "@webcomponents/webcomponentsjs": "latest",
     "@polymer/app-layout": "^3.0.0-pre.20",
     "@polymer/iron-flex-layout": "^3.0.0-pre.20",
     "@polymer/iron-icons": "^3.0.0-pre.20",
-    "@polymer/paper-icon-button": "^3.0.0-pre.20"
+    "@polymer/paper-checkbox": "latest",
+    "@polymer/paper-icon-button": "^3.0.0-pre.20",
+    "@polymer/paper-input": "^3.0.2",
+    "@polymer/paper-toolbar": "^3.0.1",
+    "@polymer/polymer": "latest",
+    "@webcomponents/webcomponentsjs": "latest"
   }
 }

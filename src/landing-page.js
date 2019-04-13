@@ -18,6 +18,8 @@ import '@polymer/app-layout/app-header/app-header.js';
 import '@polymer/app-layout/app-header-layout/app-header-layout.js';
 import '@polymer/app-layout/app-toolbar/app-toolbar.js';
 
+import '@polymer/paper-input/paper-input.js';
+
 import '@polymer/app-layout/demo/sample-content.js';
 import {Polymer} from '@polymer/polymer/lib/legacy/polymer-fn.js';
 
@@ -38,7 +40,13 @@ Polymer({
         @apply --layout-end-justified;
         background-color: rgba(255, 255, 255, 0.95);
       }
-
+      
+       .input {
+        @apply --layout-horizontal;
+        @apply --layout-end-justified;
+        color: rgba(255, 255, 255);
+      }
+      
       .tabs {
         height: 100%;
         @apply --layout-horizontal;
@@ -59,20 +67,31 @@ Polymer({
        // background-image: url('//app-layout-assets.appspot.com/assets/landing-page/glass_explorer_food_2.png');
         background-repeat: no-repeat;
         background-size: cover;
-        color: white;
+            color: white;
         text-align: center;
+        border-radius: 20px;
+
+        /*background-image: url("./assets/pineapplecut.png");*/
+        background :linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);*/
         
-        background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
       }
 
       header > h2 {
         font-size: 56px;
         font-weight: 300;
         margin: 0;
+        
+        /*background :linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);*/
+        /*  -webkit-background-clip: text;*/
+        /*  -webkit-text-fill-color: transparent;*/
+
       }
 
       header > p {
         font-size: 32px;
+        /*background :linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);*/
+        /*  -webkit-background-clip: text;*/
+        /*  -webkit-text-fill-color: transparent;*/
       }
 
       section {
@@ -129,6 +148,9 @@ Polymer({
       <header>
         <h2>Welcome To Our Landing Page</h2>
         <p>Made with App Layout Elements</p>
+
+        <paper-input always-float-label label="Enter your email address" type="email" class="input"></paper-input>
+        <p>By entering your email</p>
       </header>
 
       <section id="about">
